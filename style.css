@@ -1,0 +1,200 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+.btn {
+  background: transparent;
+  font-size: 14px;
+  border: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border-radius: 4px;
+  text-decoration: none;
+  cursor: pointer;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  -webkit-transition: all .25s ease;
+  transition: all .25s ease;
+}
+.container {
+  width: 720px;
+  margin: 20px auto;
+  padding: 0 12px;
+}
+.shops-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: -12px;
+}
+.shops-list .shops-list__teaser {
+  margin: 12px;
+  -ms-flex-preferred-size: 216px;
+      flex-basis: 216px;
+}
+.shops-list .shops-list__teaser:hover .shops-list__item {
+  -webkit-box-shadow: 0 0 4px 0 rgba(58, 48, 135, 0.75);
+          box-shadow: 0 0 4px 0 rgba(58, 48, 135, 0.75);
+}
+.shops-list .shops-list__teaser:hover .shops-list__item .shops-list-inner .shops-list-inner__bottom .btn--shops-list {
+  width: 150px;
+  border-radius: 25px;
+  overflow: hidden;
+}
+.shops-list .shops-list__teaser:hover .shops-list__item .shops-list-inner .shops-list-inner__bottom .btn--shops-list i,
+.shops-list .shops-list__teaser:hover .shops-list__item .shops-list-inner .shops-list-inner__bottom .btn--shops-list svg {
+  display: none;
+}
+.shops-list .shops-list__teaser:hover .shops-list__item .shops-list-inner .shops-list-inner__bottom .btn--shops-list span {
+  display: block;
+}
+.shops-list .shops-list__teaser .shops-list__item {
+  position: relative;
+  -webkit-box-shadow: 0 0 4px 0 rgba(137, 137, 133, 0.18);
+          box-shadow: 0 0 4px 0 rgba(137, 137, 133, 0.18);
+  border-radius: 4px;
+  border: 1px solid #eaeaea;
+}
+.shops-list .shops-list__teaser .shops-list__item .shops-list__favourite {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  font-size: 30px;
+  color: #d6d4d4;
+  cursor: pointer;
+}
+.shops-list .shops-list__teaser .shops-list__item .shops-list__favourite:hover {
+  color: red;
+}
+.shops-list .shops-list__teaser .shops-list__item .shops-list-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.shops-list .shops-list__teaser .shops-list__item .shops-list-inner .shops-list-inner__top {
+  height: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.shops-list .shops-list__teaser .shops-list__item .shops-list-inner .shops-list-inner__top img {
+  display: block;
+  max-width: 130px;
+  max-height: 55px;
+}
+.shops-list .shops-list__teaser .shops-list__item .shops-list-inner .shops-list-inner__middle {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 64px;
+}
+.shops-list .shops-list__teaser .shops-list__item .shops-list-inner .shops-list-inner__middle:before,
+.shops-list .shops-list__teaser .shops-list__item .shops-list-inner .shops-list-inner__middle:after {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  content: '';
+  display: block;
+  width: 150px;
+  border-bottom: 1px solid #d6d4d4;
+}
+.shops-list .shops-list__teaser .shops-list__item .shops-list-inner .shops-list-inner__middle:before {
+  top: 0;
+}
+.shops-list .shops-list__teaser .shops-list__item .shops-list-inner .shops-list-inner__middle:after {
+  top: 64px;
+}
+.shops-list .shops-list__teaser .shops-list__item .shops-list-inner .shops-list-inner__middle .shops-list-title {
+  font-size: 12px;
+  margin-bottom: 4px;
+  color: #a0a0a0;
+  text-transform: lowercase;
+}
+.shops-list .shops-list__teaser .shops-list__item .shops-list-inner .shops-list-inner__middle .shops-list-cash {
+  color: #4e4591;
+  font-weight: bold;
+  line-height: 1;
+}
+.shops-list .shops-list__teaser .shops-list__item .shops-list-inner .shops-list-inner__middle .shops-list-cash .shops-list-cash-label {
+  font-size: 16px;
+}
+.shops-list .shops-list__teaser .shops-list__item .shops-list-inner .shops-list-inner__middle .shops-list-cash .shops-list-cash-label .shops-list-cash-value {
+  font-size: 26px;
+  margin: 0 5px;
+}
+.shops-list .shops-list__teaser .shops-list__item .shops-list-inner .shops-list-inner__bottom {
+  height: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.shops-list .shops-list__teaser .shops-list__item .shops-list-inner .shops-list-inner__bottom .btn--shops-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #fff;
+  background: linear-gradient(136deg, #4e4591 0%, #734590 100%);
+  font-size: 12px;
+  height: 30px;
+  position: relative;
+  width: 30px;
+  border-radius: 50%;
+  -webkit-transition: all .25s ease;
+  transition: all .25s ease;
+}
+.shops-list .shops-list__teaser .shops-list__item .shops-list-inner .shops-list-inner__bottom .btn--shops-list span {
+  white-space: nowrap;
+  display: none;
+  -webkit-transition: all .25s ease;
+  transition: all .25s ease;
+}
+@media (max-width: 720px) {
+  .container {
+    width: 100%;
+  }
+  .shops-list {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}

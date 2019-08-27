@@ -1,0 +1,162 @@
+* {
+    box-sizing: border-box;
+}
+a{
+	text-decoration: none;
+}
+.btn {
+    background: transparent;
+    font-size: 14px;
+    border: none;
+    box-shadow: none;
+    border-radius: 4px;
+    text-decoration: none;
+    cursor: pointer;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    transition: all .25s ease;
+}
+
+.container {
+  width: 720px;
+  margin: 20px auto;
+  padding: 0 12px;
+}
+
+.shops-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -12px;
+    .shops-list__teaser {
+		margin: 12px;
+    	flex-basis: 216px;
+    	&:hover{
+    		.shops-list__item{
+    			box-shadow: 0 0 4px 0 rgba(58, 48, 135, 0.75);
+    			.shops-list-inner{
+    				.shops-list-inner__bottom{
+						.btn--shops-list{
+							width: 150px;
+						    border-radius: 25px;
+						    overflow: hidden;
+						    i, svg {
+						    	display: none;
+						    }
+							span {
+								display: block;
+							}
+						}
+	    			}
+    			}
+ 
+    		}
+    	}
+    	.shops-list__item{
+    		position: relative;
+		    box-shadow: 0 0 4px 0 rgba(137, 137, 133, 0.18);
+		    border-radius: 4px;
+		    border: 1px solid #eaeaea;
+		    .shops-list__favourite{
+		    	position: absolute;
+			    top: 8px;
+			    right: 8px;
+			    font-size: 30px;
+    			color: #d6d4d4;
+			    cursor: pointer;
+			    &:hover{
+			    	color: red;
+			    }
+		    }
+		    .shops-list-inner{
+		    	display: flex;
+    			flex-direction: column;
+    			.shops-list-inner__top{
+					height: 80px;
+				    display: flex;
+				    align-items: center;
+				    justify-content: center;
+				    img{
+				    	display: block;
+					    max-width: 130px;
+					    max-height: 55px;
+				    }
+    			}
+    			.shops-list-inner__middle{
+    				position: relative;
+				    display: flex;
+				    flex-direction: column;
+				    align-items: center;
+				    justify-content: center;
+				    height: 64px;
+    				&:before, &:after{
+    					position: absolute;
+					    left: 50%;
+					    transform: translateX(-50%);
+					    content: '';
+					    display: block;
+					    width: 150px;
+					    border-bottom: 1px solid #d6d4d4;
+    				}
+    				&:before{
+						top: 0;
+    				}
+    				&:after{
+					    top: 64px;
+					}
+					.shops-list-title{
+						font-size: 12px;
+					    margin-bottom: 4px;
+					    color: #a0a0a0;
+					    text-transform: lowercase;
+					}
+					.shops-list-cash{
+						color: #4e4591;
+					    font-weight: bold;
+					    line-height: 1;
+					    .shops-list-cash-label{
+					    	font-size: 16px;
+					    	.shops-list-cash-value{
+					    		font-size: 26px;
+    							margin: 0 5px;
+					    	}
+					    }
+					}
+    			}
+    			.shops-list-inner__bottom{
+    				height: 70px;
+				    display: flex;
+				    align-items: center;
+				    justify-content: center;
+				    .btn--shops-list{
+				    	display: flex;
+					    align-items: center;
+					    justify-content: center;
+					    color: #fff;
+					    background: linear-gradient(136deg, #4e4591 0%, #734590 100%);
+					    font-size: 12px;
+					    height: 30px;
+					    position: relative;
+					    width: 30px;
+					    border-radius: 50%;
+					    transition: all .25s ease;
+					    span{
+					    	white-space: nowrap;
+						    display: none;
+						    transition: all .25s ease;
+					    }
+				    }
+    			}
+		    }
+    	}
+    }
+}
+@media (max-width: 720px){
+	.container {
+	  width: 100%;
+	}
+	.shops-list{
+		justify-content: center;
+	}
+
+}
